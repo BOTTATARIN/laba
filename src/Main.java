@@ -101,10 +101,36 @@ public class Main {
             long result = calc.calculate(num1, num2, operator);
 
             System.out.println("\nРезультат:");
-            System.out.println("Двоичный: " + Long.toBinaryString(result));
-            System.out.println("Восьмеричный: " + Long.toOctalString(result));
-            System.out.println("Десятичный: " + result);
-            System.out.println("Шестнадцатеричный: " + Long.toHexString(result));
+            switch (choose) {
+                case 1:
+                    System.out.println("Двоичный: " + Long.toBinaryString(result));
+                    System.out.println("__");
+                    System.out.println("Восьмеричный: " + Long.toOctalString(result));
+                    System.out.println("Десятичный: " + result);
+                    System.out.println("Шестнадцатеричный: " + Long.toHexString(result));
+                    break;
+                case 2:
+                    System.out.println("Восьмеричный: " + Long.toOctalString(result));
+                    System.out.println("__");
+                    System.out.println("Двоичный: " + Long.toBinaryString(result));
+                    System.out.println("Десятичный: " + result);
+                    System.out.println("Шестнадцатеричный: " + Long.toHexString(result));
+                    break;
+                case 3:
+                    System.out.println("Десятичный: " + result);
+                    System.out.println("__");
+                    System.out.println("Двоичный: " + Long.toBinaryString(result));
+                    System.out.println("Восьмеричный: " + Long.toOctalString(result));
+                    System.out.println("Шестнадцатеричный: " + Long.toHexString(result));
+                    break;
+                case 4:
+                    System.out.println("Шестнадцатеричный: " + Long.toHexString(result));
+                    System.out.println("__");
+                    System.out.println("Двоичный: " + Long.toBinaryString(result));
+                    System.out.println("Восьмеричный: " + Long.toOctalString(result));
+                    System.out.println("Десятичный: " + result);
+                    break;
+            }
             System.out.println("___________________________________");
         }
     }
